@@ -51,7 +51,9 @@ a:hover, a:focus, a:current {text-decoration:none;outline:none;}
 	margin: 0 auto;
 }
 .wrap img {width:100%;}
-.inv1 {}
+ 
+.inv1 { }
+
 .call-side {
 	display:block;float:left;width:10%;
 }

@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta property="og:title" content="김기훈 ♡ 손보연의 결혼식에 초대합니다.">
+	<meta property="og:title" content="김기훈♡손보연의 결혼식에 초대합니다.">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="">
 	<meta property="og:image" content="./img/cover.jpg">
@@ -13,7 +13,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="format-detection" content="telephone=no">
-	<title>김기훈 ♡ 손보연의 결혼식에 초대합니다.</title>
+	<title>김기훈♡손보연의 결혼식에 초대합니다.</title>
 	<link href="./js/layout.css" rel="stylesheet" type="text/css">
 	<script src="./js/jquery-1.11.3.js"></script>
 	<script src="./js/kakao.min.js"></script>
@@ -21,7 +21,10 @@
 		src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ls5fbuw0dc"></script>
 </head>
 
+
+
 <body data-new-gr-c-s-check-loaded="14.1036.0" data-gr-ext-installed="">
+	
 	<div class="wrap">
 		<div class="inv1"><img src="./img/pink-header.png"></div>
 		<div class="call clear">
@@ -37,34 +40,6 @@
 		<div class="inv1"><img src="./img/pink-calendar.png"></div>
 		<!--NaverMap-->
 		<div id="map" style="width:100%;height:300px;"></div>
-		<script>
-			var HOME_PATH = window.HOME_PATH || '.';
-			var map = new naver.maps.Map(document.getElementById('map'), { zoomControl: true, zoom: 15 });
-			map.setCenter(new naver.maps.LatLng(37.5126081, 127.1003355));
-
-			var marker = new naver.maps.Marker({
-				position: new naver.maps.LatLng(37.5121581,127.1025555),
-				map: map,
-				animation: naver.maps.Animation.BOUNCE
-			});
-
-		</script>
-
-		<div class="inv1"><img src="./img/pink-navi-top.png"></div>
-
-
-		<script type="text/javascript">
-			var lat = 37.5121581
-			var lon = 127.1025555;
-			var destination = '시그니엘 서울';
-	
-			Kakao.init('33581ec31404af43397f6bf90c202f3a');
-			function kNavi() { console.log("hello"); Kakao.Navi.start({ name: destination, x: lon, y: lat, coordType: 'wgs84' }); }
-			var appkey = 'l7xx15d07681e3e740d48cf2cbdd92eb24c0';
-			function tNavi() { window.open("https://apis.openapi.sk.com/tmap/app/routes?" + 'appKey=' + appkey + '&name=' + destination + "&lon=" + lon + "&lat=" + lat); }
-			function nNavi() { window.open("https://m.map.naver.com/directions/?" + 'ename=' + destination + "&ex=" + lon + "&ey=" + lat); }
-	
-		</script>
 		<div class="navi clear">
 			<div class="navi-side"><img src="./img/pink-navi-side.png"></div>
 			<a onclick="kNavi()"><img src="./img/pink-navi-kakao.png"></a>
@@ -74,357 +49,45 @@
 		</div>
 		
 		<div class="inv1"><img src="./img/pink-navi-bottom.png"></div>
-		<div class="inv1"><img src="./img/pink-navi-thankyou-top.png"></div>
+		<div class="inv1"><img src="./img/pink-thankyou-top.png"></div>
+
+		<div class="inv1"><img src="./img/pink-bank-groom.png"></div>
+		<div class="inv1"><img src="./img/pink-bank-bride.png"></div>
+
+		<div class="inv1"><img src="./img/pink-footer.png"></div>
+		
 	</div>
 
 
-	<div class="wrap">
-		<div class="inv1">
-			<img src="./js/inv_09.jpg" class="bank" title="신랑측 계좌번호" bank="농협" names="장석주" account="351-02-110735"
-				copy="35102110735">
-			<img src="./js/inv_10.jpg" class="bank" title="신부측 계좌번호" bank="신한은행" names="정혜빈" account="110-375-233405"
-				copy="110375233405">
-			<link href="./js/css2" rel="stylesheet">
-			<script src="./js/clipboard.min.js"></script>
-
-			<style>
-				.modal {
-					visibility: hidden;
-					position: fixed;
-					z-index: 1000;
-					left: 0;
-					top: 0;
-					width: 100%;
-					height: 100%;
-					overflow: auto;
-					background-color: rgb(0, 0, 0);
-					background-color: rgba(0, 0, 0, 0.4);
-				}
-
-				.modal.on {
-					visibility: visible;
-				}
-
-				.modal-content {
-					background-color: #fefefe;
-					margin: 30vh auto;
-					padding: 20px 20px 50px;
-					border: 1px solid #888;
-					width: 80%;
-					max-width: 300px;
-				}
-
-				.modal-content.height1 {
-					margin: 30vh auto;
-				}
-
-				.modal-content.height2 {
-					margin: 25vh auto;
-				}
-
-				.modal-content.height3 {
-					margin: 20vh auto;
-				}
-
-				.close {
-					color: #111111;
-					float: right;
-					font-size: 25px !important;
-					font-weight: bold;
-				}
-
-				.close:hover,
-				.close:focus {
-					color: black;
-					text-decoration: none;
-					cursor: pointer;
-				}
-
-				.modal-content {
-					border-radius: 5px;
-				}
-
-				#bank * {
-					font-family: 'Noto Sans KR', sans-serif;
-					font-weight: 400;
-					font-size: 15px;
-				}
-
-				#bank .title {
-					color: #222222;
-					font-size: 14px
-				}
-
-				#bank .name {
-					float: right;
-					font-weight: 700;
-					margin-right: 3px;
-				}
-
-				#bank .name:before {
-					content: "예금주 : ";
-					font-weight: 400;
-				}
-
-				#bank .bankname {
-					margin-top: 30px;
-				}
-
-				#bank .account {}
-
-				#bank .text_input {
-					margin-top: 8px;
-					background: #e9e9e9;
-					border-radius: 5px;
-					position: relative;
-					padding: 10px;
-				}
-
-				#bank .btn_bank_copy {
-					color: #667788;
-					font-weight: 700;
-					position: absolute;
-					top: 0px;
-					right: 0px;
-					padding: 0px 15px;
-					background: transparent;
-					border: 0px;
-					font-size: 14px;
-					height: 39px;
-					line-height: 39px;
-				}
-
-				/* Tooltip text */
-				.tooltiptext {
-					display: none;
-					width: 120px;
-					background-color: black;
-					color: #fff;
-					text-align: center;
-					padding: 5px 0;
-					border-radius: 6px;
-					position: absolute;
-					z-index: 1;
-					top: 113%;
-					eft: 50%;
-					margin-left: -60px;
-				}
-
-				.tooltiptext1 {
-					font-size: 13px !important;
-					width: 170px;
-					/*background-color: #f8f8f8;*/
-					color: #000;
-					text-align: center;
-					padding: 6px 0;
-					border-radius: 6px;
-					position: absolute;
-					z-index: 1;
-					top: 121%;
-					left: 50%;
-					margin-left: -85px;
-				}
-
-				.bank_group {
-					position: relative;
-					display: none;
-				}
-			</style>
-
-			<script>
-				$(document).ready(function () {
-
-					var txt_copy_normal = "복사버튼을 눌러주세요.";
-					var txt_copy_success = "복사 되었습니다.";
-					$modal = $("#bank");
-					$(".bank").bind("click", function () {
-
-						//초기화
-						$(".bank_group").hide();
-						$(".modal-content").removeClass("height1").removeClass("height2").removeClass("height3");
-						$cnt = 0;
-
-						b_title = $(this).attr("title");
-						b_name = $(this).attr("names");
-						b_bank = $(this).attr("bank");
-						b_acc = $(this).attr("account");
-						b_copy = $(this).attr("copy");
-						$modal.find(".title").text(b_title);
-						$modal.find(".name").text(b_name);
-						$modal.find(".bankname").text(b_bank);
-						$modal.find(".account").text(b_acc);
-						$modal.find("#copy_account").attr("data-clipboard-text", b_copy);
-						$(".part").show();
-						$cnt++;
-
-						if ($(this).attr("names1") && $(this).attr("bank1") && $(this).attr("account1")) {
-							b_title = $(this).attr("title1");
-							b_name = $(this).attr("names1");
-							b_bank = $(this).attr("bank1");
-							b_acc = $(this).attr("account1");
-							b_copy = $(this).attr("copy1");
-							$modal.find(".part1 .title").text(b_title);
-							$modal.find(".part1 .name").text(b_name);
-							$modal.find(".part1 .bankname").text(b_bank);
-							$modal.find(".part1 .account").text(b_acc);
-							$modal.find(".part1 #copy_account1").attr("data-clipboard-text", b_copy);
-							$(".part1").show();
-							$cnt++;
-						}
-						if ($(this).attr("names2") && $(this).attr("bank2") && $(this).attr("account2")) {
-							b_title = $(this).attr("title2");
-							b_name = $(this).attr("names2");
-							b_bank = $(this).attr("bank2");
-							b_acc = $(this).attr("account2");
-							b_copy = $(this).attr("copy2");
-							$modal.find(".part2 .title").text(b_title);
-							$modal.find(".part2 .name").text(b_name);
-							$modal.find(".part2 .bankname").text(b_bank);
-							$modal.find(".part2 .account").text(b_acc);
-							$modal.find(".part2 #copy_account2").attr("data-clipboard-text", b_copy);
-							$(".part2").show();
-							$cnt++;
-						}
-						$(".tooltiptext1").text(txt_copy_normal);
-						$modal.addClass("on");
-						$(".modal-content").addClass("height" + $cnt);
-					});
-
-					$(".modal .close").bind("click", function () {
-						$modal.removeClass("on");
-						$(".tooltiptext1").text(txt_copy_normal);
-						$(".bank_group").hide();
-						$(".modal-content").removeClass("height1").removeClass("height2").removeClass("height3");
-					});
-					window.onclick = function (event) {
-						if (event.target.id == "bank") {
-							$modal.removeClass("on");
-							$(".tooltiptext1").text(txt_copy_normal);
-						}
-					}
-					var clip = new ClipboardJS('.btn_bank_copy');
-					clip.on('success', function (e) {
-						//$(".tooltiptext").fadeIn().delay(800).fadeOut();
-						$(".tooltiptext1").text(txt_copy_success);;
-					});
-
-				});
-			</script>
-
-			<div id="bank" class="modal">
-				<div class="modal-content">
-					<span class="close">×</span>
-					<div class="title">신부측 계좌번호</div>
-
-					<div class="bank_group part1" style="display: none;">
-						<div class="name">정혜빈</div>
-						<div class="bankname">신한은행</div>
-						<div class="text_input">
-							<div class="account">110-375-233405</div>
-							<button class="btn_bank_copy" id="copy_account1" data-clipboard-text="">복사</button>
-						</div>
-					</div>
-
-					<div class="bank_group part2" style="display: none;">
-						<div class="name">정혜빈</div>
-						<div class="bankname">신한은행</div>
-						<div class="text_input">
-							<div class="account">110-375-233405</div>
-							<button class="btn_bank_copy" id="copy_account2" data-clipboard-text="">복사</button>
-						</div>
-					</div>
-					<div class="bank_group part" style="display: none;">
-						<div class="name">정혜빈</div>
-						<div class="bankname">신한은행</div>
-						<div class="text_input">
-							<div class="account">110-375-233405</div>
-							<button class="btn_bank_copy" id="copy_account"
-								data-clipboard-text="110375233405">복사</button>
-							<span class="tooltiptext1">복사버튼을 눌러주세요.</span>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<div class="inv1"></div>
-		<div class="inv1"><img src="./js/inv_11.jpg"></div>
-		<div class="inv1"></div>
-		<div class="inv1">
-		</div>
-		<div class="inv1"></div>
-		<div class="inv1"></div>
-		<div class="inv1"></div>
-		<div class="inv1">
-		</div>
-		<div class="inv1"></div>
-		<div class="inv1"></div>
-		<div class="inv1">
-		</div>
-		<div class="inv1"></div>
-		<div class="inv1"></div>
-		<div class="inv1">
-		</div>
-		<div class="inv1"></div>
-		<div class="inv1"></div>
-		<div class="inv1"></div>
-
-		m
-	</div>
 
 
-	<!--카카오링크 시작-->
 
-	<script type="text/javascript">
-		//Kakao.init('d64b556f62c5296c8e161a4be879d6b9'); //단독으로 사용시 해제후 사용
-		function kakaoLink() {
-			Kakao.Link.sendCustom({
-				templateId: 7816, //7707 정사각 7815 가로 7816 세로
-				templateArgs: {
-					'title': '[장석주♡정혜빈] 결혼식에 초대합니다.',
-					'desc': '일시 : 2021.11.20 (토) 오전 11:30\n장소 : 더 그랜드 힐 컨벤션 2층 사브리나',
-					'btn': '청첩장 보러가기',
-					'url': '/2111/1120_jhbjsj', //도메인url빼고
-					'img': 'http://inv.gensdesign.co.kr/2111/1120_jhbjsj/images/main.jpg'//전체url포함 //세로사이즈400px 고정, 가로는 400px이상
-				}
-			});
-		}
+
+	<script>
+		var HOME_PATH = window.HOME_PATH || '.';
+		var map = new naver.maps.Map(document.getElementById('map'), { zoomControl: true, zoom: 15 });
+		map.setCenter(new naver.maps.LatLng(37.5126081, 127.1003355));
+
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.5121581,127.1025555),
+			map: map,
+			animation: naver.maps.Animation.BOUNCE
+		});
+
 	</script>
-	<style>
-		.kakaoLink {
-			padding: 15px 20px 15px 20px;
-			background: #e0d4d1;
-		}
 
-		.kakaoLink:after {
-			content: "";
-			clear: both;
-			display: block;
-		}
+	<script>
+		var lat = 37.5121581
+		var lon = 127.1025555;
+		var destination = '시그니엘 서울';
 
-		.kakaoLink #linkImg {
-			width: 5%;
-			float: left;
-		}
+		Kakao.init('33581ec31404af43397f6bf90c202f3a');
+		function kNavi() { console.log("hello"); Kakao.Navi.start({ name: destination, x: lon, y: lat, coordType: 'wgs84' }); }
+		var appkey = 'l7xx15d07681e3e740d48cf2cbdd92eb24c0';
+		function tNavi() { window.open("https://apis.openapi.sk.com/tmap/app/routes?" + 'appKey=' + appkey + '&name=' + destination + "&lon=" + lon + "&lat=" + lat); }
+		function nNavi() { window.open("https://m.map.naver.com/directions/?" + 'ename=' + destination + "&ex=" + lon + "&ey=" + lat); }
 
-		.kakaoLink #linkText {
-			margin: 0px 10px;
-			width: 27%;
-			float: right;
-		}
-	</style>
-	<div class="kakaoLink" onclick="kakaoLink()">
-		<img id="linkImg" src="./js/link-image.png">
-		<img id="linkText" src="./js/link-text.png">
-	</div>
-
-	<!--카카오링크 끝-->
-	<div class="wrap">
-		<div class="inv1"><a href="http://gensdesign.co.kr/"><img src="./js/inv_13.jpg"></a></div>
-		<div class="call clear">
-		</div>
-
-	</div>
+	</script>
 
 </body>
 <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
