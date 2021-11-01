@@ -41,9 +41,9 @@
 		<script>
 			var HOME_PATH = window.HOME_PATH || '.';
 			var map = new naver.maps.Map(document.getElementById('map'), { zoom: 13 });
+			var wedding_venue = new naver.maps.LatLng(37.5126081,127.1003355);
 
-			map.fitBounds(naver.maps.LatLngBounds.bounds(new naver.maps.LatLng(37.5126081,127.1003355),
-				new naver.maps.LatLng(37.5126081,127.1003355)));
+			map.setCenter(wedding_venue);
 
 			var htmlMarker = new naver.maps.Marker({
 				position: new naver.maps.LatLng(37.5126081,127.1003355),
