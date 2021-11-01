@@ -35,37 +35,23 @@
 		<div class="inv1"><img src="./img/pink-gallery.png"></div>
 		<div class="inv1"><img src="./img/pink-gallery-video.png"></div>
 		<div class="inv1"><img src="./img/pink-calendar.png"></div>
-		<!--NaverMap--> 
+		<!--NaverMap-->
 		<div id="map" style="width:100%;height:300px;"></div>
 
 		<script>
 			var HOME_PATH = window.HOME_PATH || '.';
 			var map = new naver.maps.Map(document.getElementById('map'), { zoom: 15 });
-			var wedding_venue = new naver.maps.LatLng(37.5126081,127.1003355);
+			var wedding_venue = new naver.maps.LatLng(37.5126081, 127.1003355);
 
 			map.setCenter(wedding_venue);
 
-			var pinkMarker = new naver.maps.Marker({
-    position: new naver.maps.LatLng(37.5126081,127.1003355),
-    map: map,
-    icon: {
-        content: [
-                    '<div class="cs_mapbridge">',
-                        '<div class="map_group _map_group">',
-                            '<div class="map_marker _marker tvhp tvhp_big">',
-                                '<span class="ico _icon"></span>',
-                                '<span class="shd"></span>',
-                            '</div>',
-                        '</div>',
-                    '</div>'
-                ].join(''),
-        size: new naver.maps.Size(38, 58),
-        anchor: new naver.maps.Point(19, 58),
-    }
-});
+			var marker = new naver.maps.Marker({
+				position: wedding_venue,
+				map: map
+			});
 
-pinkMarker.setTitle('Pink Hot');
-pinkMarker.setDraggable(true);
+			pinkMarker.setTitle('Pink Hot');
+			pinkMarker.setDraggable(true);
 		</script>
 	</div>
 
