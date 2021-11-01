@@ -59,6 +59,13 @@ a:hover, a:focus, a:current {text-decoration:none;outline:none;}
 	display:block;float:left;width:40%;
 }
 .call a {display:block;float:left;width:40%;}
+
+
+.navi-side {
+	display:block;float:left;width:20%;
+}
+.navi a {display:block;float:left;width:20%;}
+
 .wrap_controllers {display:none !important;}
 .map {width:100% !important;}
 .map #itfsMap {width:99% !important;margin:0 auto;}

@@ -37,7 +37,6 @@
 		<div class="inv1"><img src="./img/pink-calendar.png"></div>
 		<!--NaverMap-->
 		<div id="map" style="width:100%;height:300px;"></div>
-
 		<script>
 			var HOME_PATH = window.HOME_PATH || '.';
 			var map = new naver.maps.Map(document.getElementById('map'), { zoomControl: true, zoom: 15 });
@@ -50,57 +49,36 @@
 			});
 
 		</script>
-	</div>
+
+		<div class="inv1"><img src="./img/pink-navi-top.png"></div>
 
 
-
-	<!--네비게이션 시작-->
-	<script type="text/javascript">
-		// 공통사항 설정
-		var lat = 37.5060470;
-		var lon = 127.0667580;
-		var destination = '시그니엘 서울';
-
-		Kakao.init('d64b556f62c5296c8e161a4be879d6b9');
-		function kNavi() { Kakao.Navi.start({ name: destination, x: lon, y: lat, coordType: 'wgs84' }); }
-		var appkey = 'l7xxa42cd7f723ab488eaae60ff226e492e7';
-		function tmap() { window.open("https://apis.openapi.sk.com/tmap/app/routes?" + 'appKey=' + appkey + '&name=' + destination + "&lon=" + lon + "&lat=" + lat); }
-		function nNavi() { window.open("https://m.map.naver.com/directions/?" + 'ename=' + destination + "&ex=" + lon + "&ey=" + lat); }
-
-	</script>
-	<style>
-		.navigation {
-			padding: 30px 20px 30px 10px;
-			background: #e0d4d1;
-		}
-
-		.navigation:after {
-			content: "";
-			clear: both;
-			display: block;
-		}
-
-		.navigation .naviTitle {
-			width: 19%;
-			float: left;
-		}
-
-		.navigation [id^=btn] {
-			margin: 0px 10px;
-			width: 14%;
-			float: right;
-		}
-	</style>
-	<div class="navigation">
-		<img class="naviTitle" src="./js/navi-title.png">
-		<img id="btnNNavi" src="./js/navi-n.png" onclick="nNavi()">
-		<img id="btnTmap" src="./js/navi-t.png" onclick="tmap()">
-		<img id="btnKNavi" src="./js/navi-k.png" onclick="kNavi()"><br>
-
-	</div>
-	<div class="wrap">
+		<script type="text/javascript">
+			var lat = 37.5121581
+			var lon = 127.1025555;
+			var destination = '시그니엘 서울';
+	
+			Kakao.init('33581ec31404af43397f6bf90c202f3a');
+			function kNavi() { console.log("hello"); Kakao.Navi.start({ name: destination, x: lon, y: lat, coordType: 'wgs84' }); }
+			var appkey = 'l7xx15d07681e3e740d48cf2cbdd92eb24c0';
+			function tNavi() { window.open("https://apis.openapi.sk.com/tmap/app/routes?" + 'appKey=' + appkey + '&name=' + destination + "&lon=" + lon + "&lat=" + lat); }
+			function nNavi() { window.open("https://m.map.naver.com/directions/?" + 'ename=' + destination + "&ex=" + lon + "&ey=" + lat); }
+	
+		</script>
+		<div class="navi clear">
+			<div class="navi-side"><img src="./img/pink-navi-side.png"></div>
+			<a onclick="kNavi()"><img src="./img/pink-navi-kakao.png"></a>
+			<a onclick="tNavi()"><img src="./img/pink-navi-tmap.png"></a>
+			<a onclick="nNavi()"><img src="./img/pink-navi-naver.png"></a>
+			<div class="navi-side"><img src="./img/pink-navi-side.png"></div>
+		</div>
+		
 		<div class="inv1"><img src="./img/pink-navi-bottom.png"></div>
 		<div class="inv1"><img src="./img/pink-navi-thankyou-top.png"></div>
+	</div>
+
+
+	<div class="wrap">
 		<div class="inv1">
 			<img src="./js/inv_09.jpg" class="bank" title="신랑측 계좌번호" bank="농협" names="장석주" account="351-02-110735"
 				copy="35102110735">
