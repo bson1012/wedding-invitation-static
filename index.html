@@ -46,12 +46,11 @@
 			map.setCenter(wedding_venue);
 
 			var marker = new naver.maps.Marker({
-				position: wedding_venue,
+				position: new naver.maps.LatLng(37.5126081, 127.1003355),
 				map: map
 			});
+			marker.setDraggable(true);
 
-			pinkMarker.setTitle('Pink Hot');
-			pinkMarker.setDraggable(true);
 		</script>
 	</div>
 
