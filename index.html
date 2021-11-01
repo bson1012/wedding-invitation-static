@@ -40,31 +40,32 @@
 
 		<script>
 			var HOME_PATH = window.HOME_PATH || '.';
-			var map = new naver.maps.Map(document.getElementById('map'), { zoom: 13 });
+			var map = new naver.maps.Map(document.getElementById('map'), { zoom: 15 });
 			var wedding_venue = new naver.maps.LatLng(37.5126081,127.1003355);
 
 			map.setCenter(wedding_venue);
 
-			var htmlMarker = new naver.maps.Marker({
-				position: new naver.maps.LatLng(37.5126081,127.1003355),
-				map: map,
-				title: 'htmlMarker',
-				icon: {
-					content: [
-						'<div class="cs_mapbridge">',
-						'<div class="map_group _map_group">',
-						'<div class="map_marker _marker tvhp tvhp_big">',
-						'<span class="ico _icon"></span>',
-						'<span class="shd"></span>',
-						'</div>',
-						'</div>',
-						'</div>'
-					].join(''),
-					size: new naver.maps.Size(38, 58),
-					anchor: new naver.maps.Point(19, 58)
-				},
-				animation: naver.maps.Animation.BOUNCE
-			});
+			var pinkMarker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.5126081,127.1003355),
+    map: map,
+    icon: {
+        content: [
+                    '<div class="cs_mapbridge">',
+                        '<div class="map_group _map_group">',
+                            '<div class="map_marker _marker tvhp tvhp_big">',
+                                '<span class="ico _icon"></span>',
+                                '<span class="shd"></span>',
+                            '</div>',
+                        '</div>',
+                    '</div>'
+                ].join(''),
+        size: new naver.maps.Size(38, 58),
+        anchor: new naver.maps.Point(19, 58),
+    }
+});
+
+pinkMarker.setTitle('Pink Hot');
+pinkMarker.setDraggable(true);
 		</script>
 	</div>
 
