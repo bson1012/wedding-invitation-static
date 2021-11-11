@@ -141,3 +141,13 @@ video {
 	width: 90%;
 	margin-left: 5%;
 }
+
+.slick-track
+{
+    display: flex !important;
+}
+
+.slick-slide
+{
+    height: inherit !important;
+}
