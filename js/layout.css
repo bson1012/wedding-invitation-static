@@ -50,9 +50,7 @@ a:hover, a:focus, a:current {text-decoration:none;outline:none;}
 	max-width: 1080px;
 	margin: 0 auto;
 }
- 
-.inv1 { }
-
+.inv1 img {width:100%;}
 
 .contact a {display:block;float:left;width:50%;}
 
