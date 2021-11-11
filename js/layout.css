@@ -53,6 +53,7 @@ a:hover, a:focus, a:current {text-decoration:none;outline:none;}
 .inv1 img {width:100%;}
 .clear img {width:100%;}
 .slick-arrow img {width: 100%;}
+.img-button {width: 100%;}
 
 .contact a {display:block;float:left;width:50%;}
 
