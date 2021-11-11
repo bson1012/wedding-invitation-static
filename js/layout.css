@@ -54,13 +54,8 @@ a:hover, a:focus, a:current {text-decoration:none;outline:none;}
  
 .inv1 { }
 
-.call-side {
-	display:block;float:left;width:10%;
-}
-.call-mid {
-	display:block;float:left;width:40%;
-}
-.call a {display:block;float:left;width:40%;}
+
+.contact a {display:block;float:left;width:50%;}
 
 
 .navi-side {
@@ -81,3 +76,68 @@ a:hover, a:focus, a:current {text-decoration:none;outline:none;}
 .smsArea .sms2 {padding-top:10px;}
 .smsArea .sms2 a {display:block;}
 .map>div:nth-child(2) {display:none !important;}
+
+
+.gallery-wrapper {
+	background-image: url(../img/bg_2_gallery_wrapper.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 100%;
+}
+
+.slider-single-wrapper {
+	background-image: url(../img/bg_2_gallery.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 100%;
+}
+
+.slider-single {
+	display: block;
+}
+
+.slider-single img {
+	width: 90%;
+	margin-left: 5%;
+}
+
+.slider-nav,
+.prev,
+.next {
+	float: left;
+}
+
+.prev,
+.next {
+	width: 10%;
+}
+
+.slider-nav {
+	background-image: url(../img/bg_3_slider_mid.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 100%;
+	width: 80%;
+}
+
+.slider-nav img {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.slider-nav .slick-slide {
+	cursor: pointer;
+}
+
+.video-wrapper {
+	background-image: url(../img/bg_4_video.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 100%;
+}
+
+video {
+	width: 90%;
+	margin-left: 5%;
+}
