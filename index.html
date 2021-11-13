@@ -2,7 +2,6 @@
 <html lang="ko">
 
 <head>
-
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0, maximum-scale=2.5, minimum-scale=1.0, user-scalable=no, target-densitydpi=high-dpi">
@@ -18,22 +17,22 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="format-detection" content="telephone=no">
 	<title>김기훈♡손보연의 결혼식에 초대합니다.</title>
-	<link href="./js/layout.css" rel="stylesheet" type="text/css">
-	<script src="./js/jquery-1.11.3.js"></script>
-	<script src="./js/kakao.min.js"></script>
-	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ls5fbuw0dc">
-	</script>
-	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-	<style type="text/css">
 
-	</style>
+	<script src="lib/jquery-1.11.3.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="lib/kakao.min.js"></script>
+	<script type="text/javascript"
+		src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ls5fbuw0dc"></script>
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+	<script src="lib/slick/slick.js" type="text/javascript"></script>
+
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1036.0" data-gr-ext-installed="">
-
 	<div class="wrap">
-		<div class="inv1"><img src="./img/bg_1_intro.png"></div>
+		<div class="inv1"><img src="img/bg_1_intro.png"></div>
 
 		<!--Slider Gallery Start-->
 		<div class="gallery-wrapper">
@@ -113,9 +112,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="inv1"><img src="./img/bg_3_slider_top.png"></div>
+			<div class="inv1"><img src="img/bg_3_slider_top.png"></div>
 			<div class="slider-nav-wrapper">
-				<div class="prev" id="prev_arrow"><img  class="img-button" src="./img/bg_3_slider_left.png"></div>
+				<div class="prev" id="prev_arrow"><img class="img-button" src="img/bg_3_slider_left.png"></div>
 				<div class="slider slider-nav">
 					<div>
 						<img src="gallery/thumbnail/dress1-1.jpg">
@@ -190,138 +189,47 @@
 						<img src="gallery/thumbnail/jeju4-1.jpg">
 					</div>
 				</div>
-				<div class="next" id="next_arrow"><img  class="img-button" src="./img/bg_3_slider_right.png"></div>
+				<div class="next" id="next_arrow"><img class="img-button" src="img/bg_3_slider_right.png"></div>
 			</div>
-			<div class="inv1"><img src="./img/bg_3_slider_bottom.png"></div>
+			<div class="inv1"><img src="img/bg_3_slider_bottom.png"></div>
 		</div>
 		<!--Slider Gallery End-->
 
 		<div class="video-wrapper">
-			<div class="inv1"><img src="./img/bg_4_video_top.png"></div>
+			<div class="inv1"><img src="img/bg_4_video_top.png"></div>
 			<video controls>
-				<source src="gallery/video/dress_snap.mp4" type="video/mp4">
+				<source src="gallery/video/dress_snap_video_low.mp4" type="video/mp4">
 				Sorry, your browser doesn't support embedded videos.
 			</video>
-			<div class="inv1"><img src="./img/bg_4_video_bottom.png"></div>
+			<div class="inv1"><img src="img/bg_4_video_bottom.png"></div>
 		</div>
-		<div class="inv1"><img src="./img/bg_5_calendar.png"></div>
+		<div class="inv1"><img src="img/bg_5_calendar.png"></div>
 
 		<!--NaverMap Start-->
 		<div id="map" style="width:100%;height: 250px;"></div>
 		<div class="navi clear">
-			<div class="navi-side"><img class="img-button"  src="./img/bg_6_navi_side.png"></div>
-			<a onclick="kNavi()"><img  class="img-button" src="./img/bg_6_navi_kakao.png"></a>
-			<a onclick="tNavi()"><img  class="img-button" src="./img/bg_6_navi_tmap.png"></a>
-			<a onclick="nNavi()"><img  class="img-button" src="./img/bg_6_navi_naver.png"></a>
-			<div class="navi-side"><img  class="img-button" src="./img/bg_6_navi_side.png"></div>
+			<div class="navi-side"><img class="img-button" src="img/bg_6_navi_side.png"></div>
+			<a onclick="kNavi()"><img class="img-button" src="img/bg_6_navi_kakao.png"></a>
+			<a onclick="tNavi()"><img class="img-button" src="img/bg_6_navi_tmap.png"></a>
+			<a onclick="nNavi()"><img class="img-button" src="img/bg_6_navi_naver.png"></a>
+			<div class="navi-side"><img class="img-button" src="img/bg_6_navi_side.png"></div>
 		</div>
 		<!--NaverMap End-->
 
-		<div class="inv1"><img src="./img/bg_6_map.png"></div>
-		<div class="inv1"><img src="./img/bg_7_rsvp.png"></div>
+		<div class="inv1"><img src="img/bg_6_map.png"></div>
+		<div class="inv1"><img src="img/bg_7_rsvp.png"></div>
 		<div class="inv1">
-			<a href="https://forms.gle/9WA7phqs193Wgfji9" target="_blank"><img src="./img/bg_7_rsvp_button.png"></a>
+			<a href="https://forms.gle/9WA7phqs193Wgfji9" target="_blank"><img src="img/bg_7_rsvp_button.png"></a>
 		</div>
-		<div class="inv1"><img src="./img/bg_8_contact.png"></div>
+		<div class="inv1"><img src="img/bg_8_contact.png"></div>
 		<div class="contact clear">
-			<a href="tel:010-5270-9734"><img class="img-button" src="./img/bg_8_contact_groom.png"></a>
-			<a href="tel:010-4687-1012"><img class="img-button"  src="./img/bg_8_contact_bride.png"></a>
+			<a href="tel:010-5270-9734"><img class="img-button" src="img/bg_8_contact_groom.png"></a>
+			<a href="tel:010-4687-1012"><img class="img-button" src="img/bg_8_contact_bride.png"></a>
 		</div>
-		<div class="inv1"><img src="./img/bg_9_footer.png"></div>
-		<!-- <div class="call clear">
-			<div class="call-side"><img src="./img/pink-contact-side.png"></div>
-			<a href="tel:010-5270-9734"><img src="./img/pink-contact-groom.png"></a>
-			<a href="tel:010-4687-1012"><img src="./img/pink-contact-bride.png"></a>
-			<div class="call-side"><img src="./img/pink-contact-side.png"></div>
-		</div> -->
+		<div class="inv1"><img src="img/bg_9_footer.png"></div>
 	</div>
 
-
-
-	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		$('.slider-single').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			swipe: true,
-			arrows: false,
-			fade: true,
-			adaptiveHeight: true,
-			infinite: true,
-			useTransform: true,
-			speed: 400,
-			cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
-		});
-
-		$('.slider-nav').slick({
-			slidesToShow: 5,
-			slidesToScroll: 5,
-			dots: false,
-			focusOnSelect: true,
-			infinite: true,
-			arrows: true,
-			prevArrow: $('#prev_arrow'),
-			nextArrow: $('#next_arrow')
-		});
-
-		$('.slider-single').on('afterChange', function (event, slick, currentSlide) {
-			$('.slider-nav').slick('slickGoTo', currentSlide);
-			var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
-			$('.slider-nav .slick-slide.is-active').removeClass('is-active');
-			$(currrentNavSlideElem).addClass('is-active');
-		});
-
-		$('.slider-nav').on('click', '.slick-slide', function (event) {
-			event.preventDefault();
-			var goToSingleSlide = $(this).data('slick-index');
-
-			$('.slider-single').slick('slickGoTo', goToSingleSlide);
-		});
-	</script>
-
-	<script>
-		var HOME_PATH = window.HOME_PATH || '.';
-		var map = new naver.maps.Map(document.getElementById('map'), {
-			zoomControl: true,
-			zoom: 15
-		});
-		map.setCenter(new naver.maps.LatLng(37.5126081, 127.1003355));
-
-		var marker = new naver.maps.Marker({
-			position: new naver.maps.LatLng(37.5121581, 127.1025555),
-			map: map,
-			animation: naver.maps.Animation.BOUNCE
-		});
-	</script>
-
-	<script>
-		var lat = 37.5121581
-		var lon = 127.1025555;
-		var destination = '시그니엘 서울';
-
-		Kakao.init('33581ec31404af43397f6bf90c202f3a');
-
-		function kNavi() {
-			console.log("hello");
-			Kakao.Navi.start({
-				name: destination,
-				x: lon,
-				y: lat,
-				coordType: 'wgs84'
-			});
-		}
-		var appkey = 'l7xx15d07681e3e740d48cf2cbdd92eb24c0';
-
-		function tNavi() {
-			window.open("https://apis.openapi.sk.com/tmap/app/routes?" + 'appKey=' + appkey + '&name=' + destination +
-				"&lon=" + lon + "&lat=" + lat);
-		}
-
-		function nNavi() {
-			window.open("https://m.map.naver.com/directions/?" + 'ename=' + destination + "&ex=" + lon + "&ey=" + lat);
-		}
-	</script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 </body>
 <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
