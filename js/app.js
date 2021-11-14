@@ -61,7 +61,6 @@ var destination = '시그니엘 서울';
 Kakao.init('33581ec31404af43397f6bf90c202f3a');
 
 function kNavi() {
-    console.log("hello");
     Kakao.Navi.start({
         name: destination,
         x: lon,

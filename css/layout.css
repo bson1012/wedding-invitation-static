@@ -55,8 +55,10 @@ a:hover, a:focus, a:current {text-decoration:none;outline:none;}
 .slick-arrow img {width: 100%;}
 .img-button {width: 100%;}
 
-.contact a {display:block;float:left;width:50%;}
+.contact .side {display:block;float:left;width:30%;}
+.contact .mid {display:block;float:left;width:20%;}
 
+.bank a {display:block;float:left;width:50%;}
 
 .navi-side {
 	display:block;float:left;width:20%;
