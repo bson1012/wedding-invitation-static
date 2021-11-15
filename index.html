@@ -26,6 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
 	<script src="lib/slick/slick.js" type="text/javascript"></script>
+	<script src="lib/clipboard.min.js" type="text/javascript"></script>
 
 	<link href="css/layout.css" rel="stylesheet" type="text/css">
 </head>
@@ -227,14 +228,41 @@
 			<a class="side" href="tel:010-5270-9734"><img class="img-button" src="img/bg_8_contact2_groom_call.png"></a>
 			<a class="mid" href="sms:010-5270-9734"><img class="img-button" src="img/bg_8_contact2_groom_msg.png"></a>
 			<a class="mid" href="tel:010-4687-1012"><img class="img-button" src="img/bg_8_contact2_bride_call.png"></a>
-			<a class="side" href="sms:010-5270-9734"><img class="img-button" src="img/bg_8_contact2_bride_msg.png"></a>
+			<a class="side" href="sms:010-4687-1012"><img class="img-button" src="img/bg_8_contact2_bride_msg.png"></a>
 		</div>
-		<div class="bank clear">
-			<a href="tel:010-5270-9734"><img class="img-button" src="img/bg_9_bank_groom.png"></a>
-			<a href="sms:010-5270-9734"><img class="img-button" src="img/bg_9_bank_bride.png"></a>
+		<div class="bank-wrapper clear">
+			<a class="bank" title="신랑 측 계좌번호" bank="농협" names="박종여" account="584-02-067901" copy="58402067901"
+			 bank1="우리" names1="김기훈" account1="1002-033-832280" copy1="1002033832280"><img class="img-button" src="img/bg_9_bank_groom.png"></a>
+			<a class="bank" title="신부 측 계좌번호" bank="새마을금고" names="손보연" account="9003-2169-00677" copy="9003216900677"><img class="img-button" src="img/bg_9_bank_bride.png"></a>
 		</div>
 		<div class="inv1"><img src="img/bg_9_footer.png"></div>
 	</div>
+
+	<div id="bank" class="modal">
+		<div class="modal-content height1">
+		  <span class="close">×</span>
+		  <div class="title">계좌번호</div>
+		  
+		  <div class="bank_group part1" style="display: none;">
+			  <div class="name"></div> 
+			  <div class="bankname"></div>
+			  <div class="text_input">
+				  <div class="account"></div>       
+				  <button class="btn_bank_copy" id="copy_account1" data-clipboard-text="">복사</button>
+			  </div>
+		  </div>
+		  <div class="bank_group part" style="display: block;">
+			  <div class="name"></div> 
+			  <div class="bankname"></div>
+			  <div class="text_input">
+				  <div class="account"></div>       
+				  <button class="btn_bank_copy" id="copy_account" data-clipboard-text="35102110735">복사</button>
+				  <span class="tooltiptext1">복사버튼을 눌러주세요.</span>
+			  </div>
+		  </div>
+		  
+		</div>
+	  </div>
 
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 </body>
