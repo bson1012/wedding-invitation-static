@@ -6,18 +6,20 @@ $('.slider-single').slick({
     fade: true,
     adaptiveHeight: true,
     infinite: true,
-    useTransform: true,
-    speed: 400,
-    cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+    // useTransform: true,
+    // speed: 400,
+    // cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+	asNavFor: '.slider-nav'
 });
 
 $('.slider-nav').slick({
     slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToScroll: 1,
     dots: false,
-    focusOnSelect: true,
     infinite: true,
-    arrows: true,
+	asNavFor: '.slider-single',
+	forThum: true,
+	focusOnSelect: true,
     prevArrow: $('#prev_arrow'),
     nextArrow: $('#next_arrow')
 });
