@@ -6,34 +6,19 @@ $('.slider-single').slick({
     fade: true,
     adaptiveHeight: true,
     infinite: true,
-    useTransform: true,
-    speed: 400,
-    cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+	asNavFor: '.slider-nav'
 });
 
 $('.slider-nav').slick({
     slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToScroll: 1,
     dots: false,
-    focusOnSelect: true,
     infinite: true,
-    arrows: true,
+	asNavFor: '.slider-single',
+	forThum: true,
+	focusOnSelect: true,
     prevArrow: $('#prev_arrow'),
     nextArrow: $('#next_arrow')
-});
-
-$('.slider-single').on('afterChange', function (event, slick, currentSlide) {
-    $('.slider-nav').slick('slickGoTo', currentSlide);
-    var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
-    $('.slider-nav .slick-slide.is-active').removeClass('is-active');
-    $(currrentNavSlideElem).addClass('is-active');
-});
-
-$('.slider-nav').on('click', '.slick-slide', function (event) {
-    event.preventDefault();
-    var goToSingleSlide = $(this).data('slick-index');
-
-    $('.slider-single').slick('slickGoTo', goToSingleSlide);
 });
 
 
