@@ -179,3 +179,9 @@ video {
 .tooltiptext1 {	 font-size:13px	!important;	width: 170px;/*background-color: #f8f8f8;*/color: #000;text-align: center;padding: 6px 0;border-radius: 6px;position: absolute;z-index: 1;top: 121%;left: 50%;margin-left: -85px;}
 
 .bank_group {position: relative; display: none;}
+
+.slick-bson {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
