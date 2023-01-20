@@ -60,7 +60,7 @@ function tNavi() {
 }
 
 function nNavi() {
-	window.open("https://m.map.naver.com/directions/?" + 'ename=' + destination + "&ex=" + lon + "&ey=" + lat);
+	window.open("https://map.naver.com/?menu=location&pinType=place&title=" + destination + "&lng=" + lon + "&lat=" + lat);
 }
 
 // modal
@@ -92,7 +92,7 @@ $(document).ready(function () {
 	function draw() {
 		ctx.clearRect(0, 0, W, H);
 
-		ctx.fillStyle = "rgba(122, 122, 123, 0.8)";
+		ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
 		ctx.beginPath();
 		for (var i = 0; i < mp; i++) {
 			var p = particles[i];
@@ -103,9 +103,6 @@ $(document).ready(function () {
 		update();
 	}
 
-	$('canvas').sakura();
-
-	/*
 	//Function to move the snowflakes
 	//angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
 	var angle = 0;
@@ -144,7 +141,6 @@ $(document).ready(function () {
 
 	//animation loop
 	setInterval(draw, 33);
-	*/
 
 	var txt_copy_normal = "복사버튼을 눌러주세요.";
 	var txt_copy_success = "복사 되었습니다.";
